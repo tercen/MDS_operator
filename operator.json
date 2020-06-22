@@ -1,9 +1,9 @@
 {
-  "name": "Median",
-  "description": "Return the medium value of a cell",
-  "tags": ["basic statistics"],
+  "name": "MDS",
+  "description": "Multidimensional Scaling",
+  "tags": ["multivariate statistics"],
   "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/template_operator"],
+  "urls": ["https://github.com/tercen/MDS_operator"],
   "properties": []
 }
 
