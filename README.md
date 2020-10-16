@@ -2,14 +2,15 @@
 
 ##### Description
 
-`MDS` operator.
+`MDS` operator performs a Multidimensional Scaling analysis.
 
 ##### Usage
 
 Input projection|.
 ---|---
-`x-axis`        | numeric, input data, per cell 
-`y-axis`        | numeric, input data, per cell 
+`y-axis`        | numeric, distance measure
+`col`        | character, `dist_to` variable obtained from a `pairwise_distance` operator
+`row`        | character, variables
 
 Output relations|.
 ---|---
@@ -18,10 +19,12 @@ Output relations|.
 
 ##### Details
 
-#### References
+The operator takes as input a pariwise distance matrix as obtained with the [pairwise_distance_operator](https://github.com/tercen/pairwise_distance_operator).
+
+##### References
+
+This operator is a wrapper of the [cmdsale R function](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/cmdscale.html).
 
 ##### See Also
 
-[pca_operator](https://github.com/tercen/pca_operator)
-
-#### Examples
+[pca_operator](https://github.com/tercen/pca_operator), [pairwise_distance_operator](https://github.com/tercen/pairwise_distance_operator)
